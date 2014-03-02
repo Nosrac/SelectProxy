@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<script  type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="SelectProxy.js"></script>
+		<script>
+		$(function()
+		{
+			$("#replacementSelect").selectProxy(".selectedValue");
+		});
+		</script>
+	</head>
+	<body>
+
+		<style>
+			#replacementSelect
+			{
+				padding: 8px;
+				background: #eee;
+				border: #777;
+
+				color: #333;
+			}
+		</style>
+
+		<div id="replacementSelect">
+			Search for <span class="selectedValue"></span>
+			<select name="search">
+				<option>Antelopes</option>
+				<option>Tomatoes</option>
+				<option>Ladders</option>
+				<option>Lamps</option>
+			</select>
+		</div>
+
+	</body>
+</html>
